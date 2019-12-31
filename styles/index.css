@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to top, #162252 70%, #ffffff 0%);
+    background: linear-gradient(to top, whitesmoke 70%, #ffffff 0%);
 }
 
 header {
@@ -73,8 +73,12 @@ footer {
     padding: 5px;
     font-size: 14px;
 }
+.error {
+    color: red;
+    padding: 10px;
+}
 @media only screen and (min-width: 65.625em) {
     .wrapper {
-        background: linear-gradient(to top, #162252 50%, #ffffff 0%);
+        background: linear-gradient(to top, whitesmoke 50%, #ffffff 0%);
     }
 }
