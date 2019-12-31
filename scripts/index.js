@@ -33,7 +33,7 @@ function handleRegistration(e){
     }
     // send user data to backend server for persistence
     function registerUser(user) {
-        return fetch('https:reg-app-api.herokuapp.com/api/users', {
+        return fetch('https://reg-app-api.herokuapp.com/api/users', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',

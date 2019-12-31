@@ -30,7 +30,7 @@ function handleSubmit(e){
 }
 // retrieve user details from server
 function fetchDetails(pin){
-    return fetch(`https:reg-app-api.herokuapp.com/api/users/${pin}`)
+    return fetch(`https://reg-app-api.herokuapp.com/api/users/${pin}`)
     .then( res => res.json())
     .catch(err => {
         renderError('Error fetching details, please try again');
