@@ -10,29 +10,32 @@
 <body>
     <div class="wrapper">
         <header>
-            <span>Logo</span>
+            <span>RegApp</span>
             <div class="nav">
                 <a href="index.html">Home</a>
                 <a href="registration-details.html">Details</a>
             </div>
         </header>
-        <section>
-            <h3>USER REGISTRATION FORM</h3>
-            <P>Complete the registration form below</P>
-        </section>
+        
         <main>
-            <h3>Enter your personal info</h3>
-            <span id="error"></span>
-            <form name="register">
-                <div class="form_row">
-                    <input type="text" name="name" placeholder="name" required />
-                    <input type="text" maxlength="15" name="phone" placeholder="phone" required />
-                </div>
-                <div class="form_row">
-                    <input type="email" name="email" placeholder="email" required /> <br />
-                </div>
-                <button type="submit" name="submitBtn" >Submit</button>
-            </form>
+            <div class="intro">
+                <h3>USER REGISTRATION FORM</h3>
+                <P>Complete the registration form</P>
+            </div>
+            <div class="registration">
+                <h3>Enter your personal info</h3>
+                <form id="register" name="register">
+                    <span id="error"></span>
+                    <div class="form_row">
+                        <input type="text" name="name" placeholder="name" required />
+                        <input type="text" maxlength="15" name="phone" placeholder="phone" required />
+                    </div>
+                    <div class="form_row">
+                        <input type="email" name="email" placeholder="email" required /> <br />
+                    </div>
+                    <button type="submit" name="submitBtn" >Submit</button>
+                </form>
+            </div>
         </main>
         <footer>
             &copy 2019 Dennis Ogbonnaya

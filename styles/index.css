@@ -4,15 +4,16 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
+    clip-path: polygon(50% 0%, 100% 0, 100% 19%, 100% 62%, 82% 100%, 60% 100%, 22% 100%, 0 100%, 0% 35%, 0 0);
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to top, whitesmoke 70%, #ffffff 0%);
+    background:#162252;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 20% 10px 20%;
     background:#162252;
     color: #ffffff;
 }
@@ -24,26 +25,22 @@ header {
 .nav a:hover {
     color:#ccc
 }
-section {
-    text-align: center;
-}
-section>h3 {
-    margin-bottom: 0px;
-    padding: 0;
-}
-section>p {
-    margin-top: 0px;
-    padding: 0;
-}
+
 main {
-    margin: 5% 3% 0 3%;
     padding: 10px;
-    background: #ffffff;
-    border: 1px solid #ccc;
-    -moz-box-shadow: 3px 3px 3px 3px;
-    -webkit-box-shadow: 3px 3px 3px 3px;
-    box-shadow: 3px 3px 3px 3px #777777;
+    margin-top: 5%;
     
+}
+main>div {
+    color: #ffffff;
+    margin: 0 3% 3% 0;
+}
+main .registration {
+    background: #ffffff;
+    padding: 5px;
+}
+.registration>h3{
+    color: #162252;
 }
 .form_row {
     display: flex;
@@ -60,10 +57,9 @@ main {
 button {
     background: #162252;
     color: #ffffff;
-    height: 40px;
-    width: 100px;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px;
+    height: 40px;
+    width: 40%;
 }
 footer {
     text-align: center;
@@ -79,6 +75,10 @@ footer {
 }
 @media only screen and (min-width: 65.625em) {
     .wrapper {
-        background: linear-gradient(to top, whitesmoke 50%, #ffffff 0%);
+        clip-path: polygon(50% 0%, 100% 0, 100% 19%, 100% 57%, 75% 64%, 44% 73%, 17% 76%, 0 73%, 0% 35%, 0 0);
+    }
+    main {
+        display: flex;
+        justify-content: center;
     }
 }
