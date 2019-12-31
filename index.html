@@ -22,21 +22,22 @@
         </section>
         <main>
             <h3>Enter your personal info</h3>
-            <form action="">
+            <span id="error"></span>
+            <form name="register">
                 <div class="form_row">
-                    <input type="text" name="name" placeholder="full name" required />
+                    <input type="text" name="name" placeholder="name" required />
                     <input type="text" maxlength="15" name="phone" placeholder="phone" required />
                 </div>
                 <div class="form_row">
                     <input type="email" name="email" placeholder="email" required /> <br />
                 </div>
-                <button>Submit</button>
+                <button type="submit" name="submitBtn" >Submit</button>
             </form>
         </main>
         <footer>
             &copy 2019 Dennis Ogbonnaya
         </footer>
     </div>
+    <script src="./scripts/index.js"></script>
 </body>
-<script src="./scripts/index.js"></script>
 </html>
