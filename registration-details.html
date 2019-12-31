@@ -21,37 +21,16 @@
                 <div>
                     <h4>Registration details</h4>
                     <h1>Enter pin to confirm your registration</h1>
-                    <form action="">
+                    <span id="error"></span>
+                    <form name = "confirm" >
                         <div class="form_row">
-                            <input type="number" maxlength="10" name="digits" placeholder="enter pin" required>
-                            <button>Confirm</button>
+                            <input type="number" size="10" autofocus name="pin" id="pin" placeholder="enter pin" required>
+                            <button type="submit" id="submit">Confirm</button>
                         </div>
-                    
                     </form>
                 </div>
-                <div class="reg_details">
-                    <h4>Your details</h4>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>Full name</td>
-                                <td>Dennis Ogonnaya</td>
-                            </tr>
-                            <tr>
-                                <td>Phone</td>
-                                <td>07069797882</td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td>denkyOgb@gmail.com</td>
-                            </tr>
-                            <tr>
-                                <td>Registration date</td>
-                                <td>Dennis Ogonnaya</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <div id="loader" class="loader">confirming registration...</div>
+                <div class="reg_details"></div>
             </div>
             <img src="./public/images/introimg.jpg" alt="">
         </main>
@@ -59,6 +38,6 @@
             &copy 2019 Dennis Ogbonnaya
         </footer>
     </div>
+    <script src="./scripts/registration-details.js"  ></script>
 </body>
-<script src="./scripts/registration-details.js"></script>
 </html>
