@@ -61,6 +61,20 @@ button {
     border-radius: 10px;
     box-shadow: 1px 1px 1px 1px;
 }
+.error {
+    color: red;
+    padding: 10px;
+}
+.loader {
+    visibility: hidden;
+}
+.loader_visible {
+    visibility: visible;
+    margin-top: 10%;
+}
+.loader_hidden {
+    visibility: hidden;
+}
 footer {
     text-align: center;
     margin-top: auto;
